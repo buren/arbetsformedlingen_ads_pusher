@@ -7,7 +7,7 @@ get '/' do
   erb :index
 end
 
-post '/ad' do
+post '/ad/validate' do
   content_type :json
 
   document = Document.new(

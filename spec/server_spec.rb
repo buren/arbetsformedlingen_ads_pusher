@@ -14,7 +14,7 @@ describe 'Server' do
   describe '/ad' do
     # Test for HTTP POST for URL-matching pattern '/'
     it 'should return successfully on POST' do
-      post '/ad'
+      post '/ad/validate'
       expect(last_response).to be_ok
       json_result = JSON.parse(last_response.body)
 
