@@ -11,7 +11,7 @@ describe 'Server' do
     Sinatra::Application
   end
 
-  describe '/ad' do
+  describe '/ad/validate' do
     # Test for HTTP POST for URL-matching pattern '/'
     it 'should return successfully on POST' do
       post '/ad/validate'
