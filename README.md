@@ -2,6 +2,8 @@
 
 Arbetsformedlingen Pusher Sinatra web app deployed on AWS Lambda. It is tested with Ruby 2.5.x.
 
+:warning: Experimental!
+
 What's Here
 -----------
 
