@@ -154,7 +154,6 @@ Resources:
                 Effect: Allow
                 Action:
                   - 'cloudformation:*'
-                  - 'dynamodb:*'
                   - 'iam:*'
                   - 'lambda:*'
                   - 'apigateway:*'

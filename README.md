@@ -1,6 +1,6 @@
 ## Running Ruby Sinatra on AWS Lambda
 
-This sample code helps get you started with a simple Sinatra web app deployed on AWS Lambda. It is tested with Ruby 2.5.x. 
+This sample code helps get you started with a simple Sinatra web app deployed on AWS Lambda. It is tested with Ruby 2.5.x.
 
 What's Here
 -----------
@@ -43,21 +43,21 @@ To work on the sample code, you'll need to clone your project's repository to yo
             --template-file template.yaml \
             --output-template-file serverless-output.yaml \
             --s3-bucket { your-bucket-name }
-            
-    Alternatively, if you have [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) installed, you can run the following command 
+
+    Alternatively, if you have [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) installed, you can run the following command
     which will do the same
 
         $ sam package \
             --template-file template.yaml \
             --output-template-file serverless-output.yaml \
             --s3-bucket { your-bucket-name }
-            
+
 5. Deploying your application
 
         $ aws cloudformation deploy --template-file serverless-output.yaml \
             --stack-name { your-stack-name } \
             --capabilities CAPABILITY_IAM
-    
+
     Or use SAM CLI
 
         $ sam deploy \
@@ -66,14 +66,6 @@ To work on the sample code, you'll need to clone your project's repository to yo
             --capabilities CAPABILITY_IAM
 
 
-What Do I Do Next?
-------------------
-
-If you have checked out a local copy of your repository you can start making changes to the sample code. 
-
-Learn more about Serverless Application Model (SAM) and how it works here: https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md
-
-AWS Lambda Developer Guide: http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html
 
 How Do I Add Template Resources to My Project?
 ------------------
@@ -81,7 +73,3 @@ How Do I Add Template Resources to My Project?
 To add AWS resources to your project, you'll need to edit the `template.yaml`
 file in your project's repository. You may also need to modify permissions for
 your project's IAM roles. After you push the template change, AWS CloudFormation provisions the resources for you.
-
-## License
-
-This library is licensed under the Apache 2.0 License.
